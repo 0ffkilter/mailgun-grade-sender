@@ -60,7 +60,7 @@ def main():
 
     # get standard message to be included in body of email
     with open (message_text, "r") as message_file:
-        message_text = message_file.read().replace('\n', '')
+        message_text = message_file.read()
 
     # get students and emails
     recipients = csv_parser(csv_path)
